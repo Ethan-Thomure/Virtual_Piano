@@ -1,0 +1,73 @@
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: gray;
+    width: 50%;
+    transform: translate(0, 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+.black-keys {
+    /*background-color: black;*/
+    color: lightgray;
+    text-align: center;
+    font-size: 150%;
+
+    flex-basis: 40%;
+    display: flex;
+}
+
+.black-keys kbd{
+    background-color: black;
+    /*transform: translate(0, 100%);*/
+}
+
+.black-keys:nth-child(1) {
+    transform: translate(-49%, 103%);
+}
+
+.black-keys kbd:nth-child(2) {
+    transform: translate(80%, 0);
+}
+
+.black-keys kbd:nth-child(3) {
+    transform: translate(330%, 0);
+}
+
+.black-keys kbd:nth-child(4) {
+    transform: translate(410%, 0);
+}
+
+.black-keys kbd:nth-child(5) {
+    transform: translate(490%, 0);
+}
+
+.white-keys {
+    background-color: white;
+    text-align: center;
+    border: solid gray;
+    font-size: 300%;
+
+    /*padding: 20% .1% 5% .1%;*/
+    width: 10%;
+    flex-basis: 100%;
+    flex-grow: 1;
+
+    display: flex;
+/*    make keys go inward when pressed*/
+
+}
+
+kbd {
+    border: solid gray;
+    padding: 20% .1% 5% .1%;
+    width: 10%;
+    flex-basis: 100%;
+    flex-grow: 1;
+}
